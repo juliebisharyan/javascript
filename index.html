@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<meta name="description" content="Extra Credit">
+<link rel="stylesheet" href="../assets/simple-grid.css">
+<link rel="stylesheet" href="../assets/main.css">
+<script defer src="./assets/main.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Extra Credit</title>
+	<script defer src="./assets/main.js"></script>
+</head>
+
+<p id="replacement"> Meow </p>
+
+<body>
+	<button type="button-1" onclick="myFunction()">Change my background color!</button>
+	<button id="button-2">Change my font color!</button>
+	<button type="button-3" onclick="myFunctionTwo()">Change font!</button>
+	<button onclick="button4()">Replace!</button>
+	<button onclick="myFunctionThree()">Try it</button>
+
+</body>
+
+
+</html>
+
+<script>
+
+	function myFunction() {
+		document.body.style.backgroundColor = "salmon";
+	}
+
+	const btn = document.getElementById('button-2');
+
+	btn.addEventListener('click', function onClick(event) {
+		document.body.style.color = 'red';
+
+	});
+
+	function myFunctionTwo() {
+		document.getElementById("replacement").style.fontFamily = "Arial,sans-serif";
+	}
+
+	function button4() {
+		document.body.innerHTML
+		= document.body.innerHTML
+		.replace("Meow", "Greetings!");
+	}
+
+	function myFunctionThree() {
+  alert("and Salutations!");
+}
+
+
+</script>
+
